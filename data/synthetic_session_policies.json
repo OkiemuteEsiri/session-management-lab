@@ -1,0 +1,47 @@
+[
+  {
+    "application": "customer-portal",
+    "environment": "production",
+    "cookie_secure": true,
+    "cookie_http_only": true,
+    "cookie_same_site": "Lax",
+    "idle_timeout_minutes": 20,
+    "absolute_timeout_minutes": 480,
+    "rotate_on_authentication": true,
+    "rotate_on_privilege_change": true,
+    "invalidate_on_logout": true,
+    "csrf_protection": true,
+    "session_identifier_in_url": false,
+    "owner": "Digital Platforms"
+  },
+  {
+    "application": "partner-console",
+    "environment": "production",
+    "cookie_secure": true,
+    "cookie_http_only": false,
+    "cookie_same_site": "None",
+    "idle_timeout_minutes": 60,
+    "absolute_timeout_minutes": 1440,
+    "rotate_on_authentication": false,
+    "rotate_on_privilege_change": false,
+    "invalidate_on_logout": false,
+    "csrf_protection": false,
+    "session_identifier_in_url": false,
+    "owner": "Partner Engineering"
+  },
+  {
+    "application": "legacy-admin",
+    "environment": "staging",
+    "cookie_secure": false,
+    "cookie_http_only": true,
+    "cookie_same_site": "Lax",
+    "idle_timeout_minutes": 45,
+    "absolute_timeout_minutes": 960,
+    "rotate_on_authentication": true,
+    "rotate_on_privilege_change": false,
+    "invalidate_on_logout": true,
+    "csrf_protection": true,
+    "session_identifier_in_url": true,
+    "owner": ""
+  }
+]
